@@ -185,6 +185,13 @@ h2{
     line-height: 27px !important;
     text-align: left;
 }
+h2{
+    margin-bottom: -50px !important;
+}
+.stars{
+    position: relative;
+    top: 40px;
+}
 
 /*footer*/
 #main_footer{
