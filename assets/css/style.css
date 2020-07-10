@@ -35,14 +35,15 @@ body {
     background: rgba(0, 0, 0, 0.6);
 }
 
+
 .nav_text {
     position: relative;
     z-index: 2 !important;
 }
-
+/*
 #navbar {
     padding: 2em 10em 0 10em;
-}
+} */
 
 #navbar a{
     color: var(--primary-color);   
@@ -66,7 +67,10 @@ body {
     line-height: 36px;
     padding: 0 1em !important;
 }
-
+.fa-bars{
+  color: var(--primary-color) !important;
+  padding-top: 5px;
+}
 .header-text {
     transform: translateY(50%);
     margin-top: 3em;
