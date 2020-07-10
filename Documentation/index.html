@@ -81,19 +81,15 @@
 
 		<h3 id="cssFiles"><strong>B) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
 
-		<p>I'm using two CSS files in this theme. The first one is a generic reset file. Many browser interpret the default behavior of html elements differently. By using a general reset CSS file, we can work round this. This file also contains some general styling, such as anchor tag colors, font-sizes, etc. Keep in mind, that these values might be overridden somewhere else in the file.</p> 
+		<p>I'm using one CSS file in this theme. The first one is a generic reset file. </p> 
 
-		<p>The second file contains all of the specific stylings for the page. The file is separated into sections using:</p>  
+		<!---<p>Many browser interpret the default behavior of html elements differently. By using a general reset CSS file, we can work round this. This file also contains some general styling, such as anchor tag colors, font-sizes, etc. Keep in mind, that these values might be overridden somewhere else in the file.The second file contains all of the specific stylings for the page. The file is separated into sections using:</p>  --->
 
 <pre>	/* === Header Section === */
 
 	some code
 
-	/* === Main Section === */
-	
-	some code
-	
-	/* === Sidebar Section === */
+	/* === content Section === */
 	
 	some code
 	
@@ -106,10 +102,10 @@
 		
 		<p>If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited.</p> 
 
-		<p>Any images that are placed within the blog section have 5px worth of padding and a light bluish background. If you would like to edit the display of these images, find the following section in the style sheet:</p>
+		<p>It is worth Knowing that you can reduce the font-sizes, image size or color for almost any element on the page.I some cases you need to just add 'important' like shown below.</p>
 
 <pre>	#primaryContent #blog img {
-		change styles here:
+		change styles here: somecolor !important;
 	}
 </pre>
 

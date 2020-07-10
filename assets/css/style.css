@@ -1,3 +1,4 @@
+/*all elements*/
 * {
     box-sizing: border-box;
     padding: 0;
@@ -15,7 +16,7 @@ body {
     font-family: 'Poppins',
         sans-serif;
 }
-
+/*header*/
 #header {
     background: url('/assets/images/1.png') no-repeat center center;
     width: 100%;
@@ -40,10 +41,6 @@ body {
     position: relative;
     z-index: 2 !important;
 }
-/*
-#navbar {
-    padding: 2em 10em 0 10em;
-} */
 
 #navbar a{
     color: var(--primary-color);   
@@ -110,6 +107,15 @@ body {
         background-size: cover;
         position: relative;
     }
+
+    #navbar .navbar-brand{
+    font-family: 'Clicker Script',
+    cursive;
+    font-size: 48px;
+    line-height: 127px;
+    font-weight: normal;
+}
+
     .header-text {
         transform: translateY(50%) !important;
     }
@@ -123,7 +129,35 @@ body {
     }
 
 }
+@media (max-width: 400px) {
+     #header {
+        width: 100%;
+        height: 120vh;
+        background-size: cover;
+        position: relative;
+    } 
+    #navbar .navbar-brand{
+    font-family: 'Clicker Script',
+    cursive;
+    font-size: 48px;
+    line-height: 127px;
+    font-weight: normal;
+}
+    .header-text {
+        transform: translateY(-5%) !important;
+    }
+    #header_one{
+        font-family: 'Clicker Script',
+        cursive;
+        font-size: 67px;
+        line-height: 45px;
+        color: var(--primary-color);
+        margin-bottom: 0.5em;
+    }
+}
 
+
+/*Content*/
 #main{
     margin-top: 3em;
 }
