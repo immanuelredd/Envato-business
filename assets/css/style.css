@@ -193,6 +193,13 @@ h2{
     top: 40px;
 }
 
+.card-img-overlay{
+    margin-top: 130% !important;
+    text-align: center;
+    background: rgba(13, 126, 60, 0.6);
+    z-index: 1;
+}
+
 /*footer*/
 #main_footer{
     background-color: var(--main-color);
