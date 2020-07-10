@@ -103,6 +103,27 @@ body {
     text-decoration: none;
 }
 
+@media (max-width: 1000px){
+    #header {
+        width: 100%;
+        height: 120vh;
+        background-size: cover;
+        position: relative;
+    }
+    .header-text {
+        transform: translateY(50%) !important;
+    }
+    #header_one{
+        font-family: 'Clicker Script',
+        cursive;
+        font-size: 67px;
+        line-height: 45px;
+        color: var(--primary-color);
+        margin-bottom: 0.5em;
+    }
+
+}
+
 #main{
     margin-top: 3em;
 }
@@ -159,3 +180,4 @@ h2{
     text-align: center;
     padding: 1em;
 }
+
