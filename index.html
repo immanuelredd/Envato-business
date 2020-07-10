@@ -19,7 +19,7 @@
         <div class="nav_text">
             <nav class="navbar navbar-expand-lg" id="navbar">
                 <div class="container">
-                    <a class="navbar-brand" href="#">TownLight</a>
+                    <a class="navbar-brand" href="#">Townlight</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -30,17 +30,17 @@
                             <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
                             <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
                             <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link" id="btn">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
             <div class="header-text">
-                <div class="container">
+                <div class="container text-center">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1 id="header_one">TownsLite Bakery</h1>
-                            <a href="#" class="btn btn-md">Order now</a>
+                            <h1 id="header_one">Townstite Bakery</h1>
+                            <a href="#" id="btn">Order now</a>
                         </div>
                     </div>
                 </div>
@@ -50,19 +50,27 @@
 
     </header>
 
-    <main id="main" class="container">
-        <h2 class="header_two">About Us</h2>
-        <p class="paragraph_one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eveniet doloremque porro
-            cupiditate nulla id blanditiis cumque.</p>
+    <main id="main" class="container mt-5 mb-5">
+        <div class="text-center">
+            <h2 class="header_two">About Us</h2>
+            <figure id="fiqure_one">
+                <p><img src="assets/images/12.png" alt="stars" class=""></p>
+                <span><img src="assets/images/11.png" alt="lines"></span>
+            </figure>
+            <p class="paragraph_one">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eveniet doloremque porro
+                cupiditate nulla id blanditiis cumque.
+            </p>
+        </div>
         <div class="row">
             <div class="col-md-6">
                 <figure>
-                    <img src="assets/images/2.png" alt="baker">
+                    <img src="assets/images/2.png" alt="baker" height="30%">
                 </figure>
 
             </div>
-            <div class="col-md-6">
-                <p>
+            <div class="col-md-6 paragragh">
+                <p class="paragraph_two">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum vel quisquam facilis voluptatum
                     rem molestias praesentium ad minima, atque dolorem esse a corrupti cumque reiciendis repellendus
                     unde harum enim beatae.
@@ -75,8 +83,7 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque modi, id ad veritatis cum,
                     voluptatibus placeat ut sint reiciendis similique facere autem facilis molestias unde! Distinctio
                     veniam facere reprehenderit doloremque.
-                </p>
-                <p>
+                    <br>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quasi dolores facilis aspernatur nemo
                     repellat perspiciatis eaque, repudiandae maiores quidem laborum! Magni obcaecati necessitatibus
                     dolore, quo quidem laborum nesciunt architecto.
@@ -85,10 +92,17 @@
         </div>
     </main>
 
-    <div class="padding">
+    <div class="padding mt-5 mb-5">
         <div class="container">
-            <h2>Portfolio</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="text-center">
+                <h2>Portfolio</h2>
+                <figure id="fiqure_one">
+                    <p><img src="assets/images/12.png" alt="stars" class=""></p>
+                    <span><img src="assets/images/11.png" alt="lines"></span>
+                </figure>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+           
             <div class="row">
                 <div class="col-md-4">
                     <img src="assets/images/3.png" alt="" srcset="" class="img-thumbnail">
@@ -103,12 +117,19 @@
         </div>
     </div>
 
-    <div class="padding">
+    <div class="padding mb-5">
         <div class="container">
-            <h2>Clients testimony</h2>
+            <div class="text-center">
+                <h2>Clients testimony</h2>
+                <figure id="fiqure_one">
+                    <p><img src="assets/images/12.png" alt="stars" class=""></p>
+                    <span><img src="assets/images/11.png" alt="lines"></span>
+                </figure>
+            </div>
+            
             <div class="row">
-                <div class="col-lg-12">
-                    <img src="assets/images/6.png" alt="testimony">
+                <div class="col-lg-12 text-center">
+                    <img src="assets/images/6.png" alt="testimony" class="mb-5">
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta ullam facilis fuga laborum
                         facere voluptatum, culpa fugit nobis, incidunt assumenda veniam provident obcaecati saepe, est
@@ -130,30 +151,42 @@
         </div>
     </div>
 
-    <div class="padding">
+    <div class="padding mt-3 mb-5">
         <div class="container">
-            <div>
+            <div class="text-center">
                 <h2>Blog Post</h2>
+                <figure id="fiqure_one">
+                    <p><img src="assets/images/12.png" alt="stars" class=""></p>
+                    <span><img src="assets/images/11.png" alt="lines"></span>
+                </figure>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
             </div>
             <div class="row">
-                <col-md-4>
-                    <img src="assets/images/7.png" alt="" class="img-thumbnail">
-                </col-md-4>
-                <col-md-4>
-                    <img src="assets/images/8.png" alt="" class="img-thumbnail">
-                </col-md-4>
-                <col-md-4>
-                    <img src="assets/images/9.png" alt="" class="img-thumbnail">
-                </col-md-4>
+                <div class="col-md-4">
+                    <img src="assets/images/7.png" alt="" class="img-thumbnail" height="400px" width="400px">
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/images/8.png" alt="" class="img-thumbnail" height="400px" width="400px">
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/images/9.png" alt="" class="img-thumbnail" height="400px" width="400px">
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="padding">
+    <div class="padding mt-3 mb-5">
         <div class="container">
+            <div class="text-center">
+                <h2>Contact Us</h2>
+                <figure id="fiqure_one" >
+                    <p><img src="assets/images/12.png" alt="stars" class=""></p>
+                    <span><img src="assets/images/11.png" alt="lines"></span>
+                </figure>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic</p>
+            </div>
             <div class="row">
 
                 <div class="col-lg-6">
@@ -171,11 +204,14 @@
                         <label for="Message">Message</label>
                         <textarea name="message" id="message" cols="30" rows="10" class="form-control"></textarea>
 
-                        <input type="submit" value="Submit" class="btn btn-md btn-success">
+                        <input type="submit" value="Submit" class="btn btn-md btn-success m-3">
 
                     </form>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6" style="width:500px;height:500px;">
+                        <div id="gmapdisplay" style="height:100%; width:100%; max-width:100%;">
+                            <iframe style="height:100%; width:100%; border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Address:+2853+Seville+Cir.+Antioch,+Carlifonia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                        </div>
                 </div>
             </div>
         </div>
@@ -185,40 +221,43 @@
 
     </div>
 
-    <footer id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <a href="">Townlite</a>
+    <div id="main_footer">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="">Townlite</a>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Contact us</h3>
+                        <p>Address: 2853 Seville Cir. Antioch, Carlifonia</p>
+                        <p>Phone: + 234 (0) 816-610-8330</p>
+                        <p>Email: info@bakeryshop.com</p>
+                        <p>www.bakeryshop.com</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>The shop is open</p>
+                        <p>Monday to Friday from</p>
+                        <p>8am - 7pm</p>
+    
+                        <ul>
+                            <li><i class="fab fa-instagram-square"></i></li>
+                            <li><i class="fab fa-facebook-square"></i></li>
+                            <li><i class="fab fa-twitter-square"></i></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <h3>Contact us</h3>
-                    <p>Address: 2853 Seville Cir. Antioch, Carlifonia</p>
-                    <p>Phone: + 234 (0) 816-610-8330</p>
-                    <p>Email: info@bakeryshop.com</p>
-                    <p>www.bakeryshop.com< /p>
-                </div>
-                <div class="col-md-4">
-                    <p>the shop is open</p>
-                    <p>monday to firday from</p>
-                    <p>8am - 7pm</p>
-
-                    <ul>
-                        <li><i class="fab fa-instagram-square"></i></li>
-                        <li><i class="fab fa-facebook-square"></i></li>
-                        <li><i class="fab fa-twitter-square"></i></li>
-                    </ul>
-                </div>
+    
+    
             </div>
-
-
-        </div>
-
+        </footer>
+    </div>
+    <div id="footer_copyright">
         <div class="container" id="copyright">
             <p>Copyright ©2020, BAKERY SHOP. All rights reserved</p>
         </div>
-
-    </footer>
+    </div>
+   
 
 
 

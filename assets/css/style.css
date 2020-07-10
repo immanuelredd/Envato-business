@@ -41,5 +41,117 @@ body {
 }
 
 #navbar {
-    margin: 2em;
+    padding: 2em 10em 0 10em;
+}
+
+#navbar a{
+    color: var(--primary-color);   
+}
+
+#navbar .navbar-brand{
+    font-family: 'Clicker Script',
+    cursive;
+    font-size: 96px;
+    line-height: 127px;
+    font-weight: normal;
+}
+
+.nav-link{
+    font-family: 'Poppins',
+    sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    line-height: 36px;
+    padding: 0 1em !important;
+}
+
+.header-text {
+    transform: translateY(50%);
+    margin-top: 3em;
+}
+
+#header_one{
+    font-family: 'Clicker Script',
+    cursive;
+    font-size: 134px;
+    line-height: 90px;
+    color: var(--primary-color);
+    margin-bottom: 0.5em;
+}
+
+#header #btn{
+    background-color: var(--main-color) !important;
+    color: var(--primary-color) !important;
+    border-radius: 3px;
+}
+
+.header-text #btn{
+    font-family: 'Poppins',
+    sans-serif;
+    padding: 0.5em;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    border-radius: 5px !important;
+    text-decoration: none;
+}
+
+#main{
+    margin-top: 3em;
+}
+
+h2{
+    font-family: 'Clicker Script',
+    cursive;
+    color: var(--main-color);
+    font-weight: normal !important;
+    font-size: 60px !important;
+    line-height: 79px !important;
+}
+
+.paragraph_one{
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+}
+
+.paragraph_two{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px !important;
+    line-height: 27px !important;
+    text-align: left;
+}
+
+/*footer*/
+#main_footer{
+    background-color: var(--main-color);
+    color: white;
+    padding: 2em;
+    text-align: justify;
+}
+#main_footer a{
+    font-family: 'Clicker Script',
+    cursive;
+    font-size: 96px;
+    line-height: 127px;
+    text-decoration: none;
+    color: white !important;
+}
+#main_footer ul{
+    list-style: none;
+}
+#main_footer li{
+    display: inline;
+    padding: 0 0.8em;
+}
+#footer_copyright{
+    background: #00BF7A !important;
+    color: white;
+    text-align: center;
+    padding: 1em;
 }
