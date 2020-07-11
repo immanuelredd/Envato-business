@@ -16,6 +16,7 @@ body {
     font-family: 'Poppins',
         sans-serif;
 }
+
 /*header*/
 #header {
     background: url('/assets/images/1.png') no-repeat center center;
@@ -42,21 +43,21 @@ body {
     z-index: 2 !important;
 }
 
-#navbar a{
-    color: var(--primary-color);   
+#navbar a {
+    color: var(--primary-color);
 }
 
-#navbar .navbar-brand{
+#navbar .navbar-brand {
     font-family: 'Clicker Script',
-    cursive;
+        cursive;
     font-size: 96px;
     line-height: 127px;
     font-weight: normal;
 }
 
-.nav-link{
+.nav-link {
     font-family: 'Poppins',
-    sans-serif;
+        sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -64,33 +65,35 @@ body {
     line-height: 36px;
     padding: 0 1em !important;
 }
-.fa-bars{
-  color: var(--primary-color) !important;
-  padding-top: 5px;
+
+.fa-bars {
+    color: var(--primary-color) !important;
+    padding-top: 5px;
 }
+
 .header-text {
     transform: translateY(50%);
     margin-top: 3em;
 }
 
-#header_one{
+#header_one {
     font-family: 'Clicker Script',
-    cursive;
+        cursive;
     font-size: 134px;
     line-height: 90px;
     color: var(--primary-color);
     margin-bottom: 0.5em;
 }
 
-#header #btn{
+#header #btn {
     background-color: var(--main-color) !important;
     color: var(--primary-color) !important;
     border-radius: 3px;
 }
 
-.header-text #btn{
+.header-text #btn {
     font-family: 'Poppins',
-    sans-serif;
+        sans-serif;
     padding: 0.5em;
     text-transform: uppercase;
     font-weight: 600;
@@ -100,7 +103,7 @@ body {
     text-decoration: none;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1000px) {
     #header {
         width: 100%;
         height: 120vh;
@@ -108,20 +111,21 @@ body {
         position: relative;
     }
 
-    #navbar .navbar-brand{
-    font-family: 'Clicker Script',
-    cursive;
-    font-size: 48px;
-    line-height: 127px;
-    font-weight: normal;
-}
+    #navbar .navbar-brand {
+        font-family: 'Clicker Script',
+            cursive;
+        font-size: 48px;
+        line-height: 127px;
+        font-weight: normal;
+    }
 
     .header-text {
         transform: translateY(50%) !important;
     }
-    #header_one{
+
+    #header_one {
         font-family: 'Clicker Script',
-        cursive;
+            cursive;
         font-size: 67px;
         line-height: 45px;
         color: var(--primary-color);
@@ -129,26 +133,30 @@ body {
     }
 
 }
+
 @media (max-width: 400px) {
-     #header {
+    #header {
         width: 100%;
         height: 120vh;
         background-size: cover;
         position: relative;
-    } 
-    #navbar .navbar-brand{
-    font-family: 'Clicker Script',
-    cursive;
-    font-size: 48px;
-    line-height: 127px;
-    font-weight: normal;
-}
+    }
+
+    #navbar .navbar-brand {
+        font-family: 'Clicker Script',
+            cursive;
+        font-size: 48px;
+        line-height: 127px;
+        font-weight: normal;
+    }
+
     .header-text {
         transform: translateY(-5%) !important;
     }
-    #header_one{
+
+    #header_one {
         font-family: 'Clicker Script',
-        cursive;
+            cursive;
         font-size: 67px;
         line-height: 45px;
         color: var(--primary-color);
@@ -158,26 +166,26 @@ body {
 
 
 /*Content*/
-#main{
+#main {
     margin-top: 3em;
 }
 
-h2{
+h2 {
     font-family: 'Clicker Script',
-    cursive;
+        cursive;
     color: var(--main-color);
     font-weight: normal !important;
     font-size: 60px !important;
     line-height: 79px !important;
 }
 
-.paragraph_one{
+.paragraph_one {
     font-size: 18px;
     line-height: 27px;
     color: #000000;
 }
 
-.paragraph_two{
+.paragraph_two {
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
@@ -185,47 +193,84 @@ h2{
     line-height: 27px !important;
     text-align: left;
 }
-h2{
+
+h2 {
     margin-bottom: -50px !important;
 }
-.stars{
+
+.stars {
     position: relative;
     top: 40px;
 }
 
-.card-img-overlay{
+#portfolio h4,
+p {
+    font-family: Poppins;
+}
+
+.card-img-overlay h4 {
+    font-style: normal;
+    font-weight: 600 !important;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.card-img-overlay .card-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.card-img-overlay .text-left {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+
+.card-img-top {
+    filter: brightness(90%);
+}
+
+.card-img-overlay {
     margin-top: 130% !important;
     text-align: center;
-    background: rgba(13, 126, 60, 0.6);
+    background: rgba(2, 180, 76, 0.6);
     z-index: 1;
+    color: var(--primary-color);
+    padding: 2em 4em !important;
 }
 
 /*footer*/
-#main_footer{
+#main_footer {
     background-color: var(--main-color);
     color: white;
     padding: 2em;
     text-align: justify;
 }
-#main_footer a{
+
+#main_footer a {
     font-family: 'Clicker Script',
-    cursive;
+        cursive;
     font-size: 96px;
     line-height: 127px;
     text-decoration: none;
     color: white !important;
 }
-#main_footer ul{
+
+#main_footer ul {
     list-style: none;
 }
-#main_footer li{
+
+#main_footer li {
     display: inline;
     padding: 0 0.8em;
 }
-#footer_copyright{
+
+#footer_copyright {
     background: #00BF7A !important;
     color: white;
     text-align: center;
     padding: 1em;
 }
-
