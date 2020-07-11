@@ -1,176 +1,359 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<head lang="en">
-	<meta http-equiv="content-type" content="text/html;charset=utf-8">
-	<title>Template Documentation Template</title>
-	<!-- Framework CSS -->
-	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
-	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
-	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
-	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
-	<style type="text/css" media="screen">
-		p, table, hr, .box { margin-bottom:25px; }
-		.box p { margin-bottom:10px; }
-	</style>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <script src="https://kit.fontawesome.com/afad5444a3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/js/custom.js">
+    <title>Townlite | Bakery</title>
 </head>
 
-
 <body>
-	<div class="container">
-	
-		<h3 class="center alt">&ldquo;Townlite Bakery&rdquo; Documentation by &ldquo;Template Author&rdquo; v1.0</h3>
-		
-		<hr>
-		
-		<h1 class="center">&ldquo;Townlite Bakery&rdquo;</h1>
-		
-		<div class="borderTop">
-			<div class="span-6 colborder info prepend-1">
-				<p class="prepend-top">
-					<strong>
-					Created: 10/07/2020<br>
-					By: Okputu Emmanuel Okputu<br>
-					Email: <a href="mailto:youremail@yourdomain.com">imanuelokputu94@gmail.com</a>
-					</strong>
-				</p>
-			</div><!-- end div .span-6 -->		
-	
-			<div class="span-12 last">
-				<p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/USERNAME">here</a>. Thanks so much!</p>
-			</div>
-		</div><!-- end div .borderTop -->
-		
-		<hr>
-		
-		<h2 id="toc" class="alt">Table of Contents</h2>
-		<ol class="alpha">
-			<li><a href="#htmlStructure">HTML Structure</a></li>
-			<li><a href="#cssFiles">CSS Files and Structure</a></li>
-			<li><a href="#javascript">JavaScript</a></li>
-			<li><a href="#psdFiles">PSD Files</a></li>
-			<li><a href="#credits">Sources and Credits</a></li>
-			<li><a href="#">API Usage</a> <em class="quiet small"></em></li>
-			<li><a href="#">Any additional unique features that need an overview</a></li>
-		</ol>
-		
-		<hr>
-		
-		<h3 id="htmlStructure"><strong>A) HTML Structure</strong> - <a href="#toc">top</a></h3>
-		<p>This theme is a fixed layout with two columns. All of the information within the main content area is nested within a div with an id of "primaryContent". The sidebar's (column #2) content is within a div with an id of "secondaryContent". The general template structure is the same throughout the template. Here is the general structure.</p>
-		
-		<img src="assets/images/htmlstructure.png" alt="HTML Structure" />
-		
-		<p>If you would like to edit the color, font, or style of any elements in one of these columns, you would do the following:</p>
+    <div id="wrapper">
+        <!--header start-->
+        <header id="header">
+            <div class="nav_text">
+                <nav class="navbar navbar-expand-lg" id="navbar">
+                    <div class="container">
+                        <a class="navbar-brand" href="#">Townlight</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"><i class="fas fa-bars"></i>
+                            </span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link" id="btn">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="header-text">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1 id="header_one">Townlite Bakery</h1>
+                                <a href="#" id="btn">Order now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-<pre>	#primaryContent a {
-		color: #someColor;
-	} 
-</pre>
 
-		<p>If you find that your new style is not overriding, it is most likely because of a specificity problem. Scroll down in your CSS file and make sure that there isn't a similar style that has more weight.</p>
+        </header>
+        <!--header end-->
 
-		<p>I.E.</p>
+        <!---Content-->
+        <main id="main" class="container mt-5 mb-5">
+            <div class="text-center">
+                <h2 class="header_two">About Us</h2>
+                <figure id="fiqure_one">
+                    <p><img src="assets/images/12.png" alt="stars" class="stars"></p>
+                    <span><img src="assets/images/11.png" alt="lines"></span>
+                </figure>
+                <p class="paragraph_one">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio eveniet doloremque porro
+                    cupiditate nulla id blanditiis cumque.
+                </p>
+            </div>
+            <div class="row text-center">
+                <div class="col-lg-6 col-12">
+                    <figure>
+                        <img src="assets/images/2.png" alt="baker" height="auto" width="100%">
+                    </figure>
 
-<pre>	#wrap #primaryContent a {
-		color: #someColor;
-	}
-</pre>
+                </div>
+                <div class="col-lg-6 col-12 paragragh">
+                    <p class="paragraph_two">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum vel quisquam facilis
+                        voluptatum
+                        rem molestias praesentium ad minima, atque dolorem esse a corrupti cumque reiciendis repellendus
+                        unde harum enim beatae.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio omnis autem nihil quidem laborum
+                        accusantium, repellat eos saepe voluptas commodi hic adipisci eligendi! Iste, non. Dolore
+                        temporibus
+                        natus officiis nulla?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat similique aliquid et ea rem
+                        sunt
+                        quam quis, fugit soluta saepe, deleniti, harum iusto in! Qui exercitationem eos nihil harum
+                        sapiente.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque modi, id ad veritatis cum,
+                        voluptatibus placeat ut sint reiciendis similique facere autem facilis molestias unde!
+                        Distinctio
+                        veniam facere reprehenderit doloremque.
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quasi dolores facilis aspernatur
+                        nemo
+                        repellat perspiciatis eaque, repudiandae maiores quidem laborum! Magni obcaecati necessitatibus
+                        dolore, quo quidem laborum nesciunt architecto.
+                    </p>
+                </div>
+            </div>
+        </main>
 
-		<p>So, to ensure that your new styles are applied, make sure that they carry enough "weight" and that there isn't a style lower in the CSS file that is being applied after yours.</p> 
+        <div class=" mt-5 mb-5" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2>Portfolio</h2>
+                    <figure id="fiqure_one">
+                        <p><img src="assets/images/12.png" alt="stars" class="stars"></p>
+                        <span><img src="assets/images/11.png" alt="lines"></span>
+                    </figure>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
 
-		<hr>
+                <div class="swiper-container">
+                    <!-- Slider main container -->
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 mb-2 swiper-wrapper">
+                            <div class="card swiper-slide">
+                                <img src="assets/images/3.png" alt="" srcset="" class="card-img-top d-block w-100">
+                                <div class="card-img-overlay">
+                                    <h4 class="card-title">Maple Oat Muffin</h4>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <p class="text-left">$ 10.25</p>
+                                </div>
+                            </div>
 
-		<h3 id="cssFiles"><strong>B) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+                        </div>
+                        <div class="col-lg-4 col-md-12 mb-2 swiper-wrapper">
+                            <div class="card swiper-slide">
+                                <img src="assets/images/4.png" alt="" srcset="" class="card-img-top d-block w-100">
+                                <div class="card-img-overlay">
+                                    <h4 class="card-title">Amaretti Cookie</h4>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <p class="text-left">$ 12.25</p>
+                                </div>
+                            </div>
 
-		<p>I'm using one CSS file in this theme. The first one is a generic reset file. </p> 
+                        </div>
+                        <div class="col-lg-4 col-md-12  mb-2 swiper-wrapper ">
 
-		<!---<p>Many browser interpret the default behavior of html elements differently. By using a general reset CSS file, we can work round this. This file also contains some general styling, such as anchor tag colors, font-sizes, etc. Keep in mind, that these values might be overridden somewhere else in the file.The second file contains all of the specific stylings for the page. The file is separated into sections using:</p>  --->
+                            <div class="card swiper-slide">
+                                <img src="assets/images/5.png" alt="" srcset="" class="card-img-top d-block w-100">
+                                <div class="card-img-overlay">
+                                    <h4 class="card-title">Sourdough</h4>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <p class="text-left">$ 6.25</p>
+                                </div>
+                            </div>
 
-<pre>	/* === Header Section === */
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
 
-	some code
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
 
-	/* === content Section === */
-	
-	some code
-	
-	/* === Footer === */
-	
-	some code
-	
-	etc, etc. 
-</pre>
-		
-		<p>If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited.</p> 
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
 
-		<p>It is worth Knowing that you can reduce the font-sizes, image size or color for almost any element on the page.I some cases you need to just add 'important' like shown below.</p>
+        </div>
 
-<pre>	#primaryContent #blog img {
-		change styles here: somecolor !important;
-	}
-</pre>
 
-		<hr>
-		
-		<h3 id="javascript"><strong>C) JavaScript</strong> - <a href="#toc">top</a></h3>
-		
-		<p>This theme imports three Javascript files.</p>
-		
-		<ol>
-			<li>jQuery</li>
-			<li>My custom scripts</li>
-			<li>Some plugin</li>
-		</ol>
-		  
-		<ol>
-			<li>jQuery is a Javascript library that greatly reduces the amount of code that you must write.</li>
-			<li>Most of the animation in this site is carried out from the customs scripts. There are a few functions worth looking over.
-<pre>	[some Javascript goes here...along with an general explanation]
-	[some Javascript goes here...along with an general explanation]
-	[some Javascript goes here...along with an general explanation]
-</pre>
-			</li>
-			<li>In addition to the custom scripts, I implement a few "tried and true" plugins to create the effects. This plugin is packed, so you won't need to manually edit anything in the file. The only necessary thing to know is how to call the method. For example:
-<pre>	[some Javascript goes here...along with an general explanation]</pre>
-			</li>
-		</ol>
-		
-		<hr>
-		
-		<h3 id="psdFiles"><strong>D) PSD Files</strong> - <a href="#toc">top</a></h3>
-		
-		<p>I've included three psds with this theme:</p>
-		
-			<ol>
-				<li>The main layout</li>
-				<li>The header</li>
-				<li>The buttons</li>
-			</ol>
-		
-		<p>If you'd like to change the main image in the header, open "header.psd", make the necessary adjustments, and then save the file as "headerBG.png". Do the same for the buttons.</p> 
-		
-		<p>Include any more specific information about your psds.</p>
-		
-		<hr>
-		
-		<h3 id="credits"><strong>E) Sources and Credits</strong> - <a href="#toc">top</a></h3>
-		
-		<p>I've used the following images, icons or other files as listed.
-		
-		<ul>
-			<li>File name from file author</li>
-			<li>File name from file author</li>
-			<li>File name from file author</li>
-			<li>File name from file author</li>
-		</ul>
-		
-		<hr>
-		
-		<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
-		
-		<p class="append-bottom alt large"><strong>Okputu Emmanuel Okputu</strong></p>
-		<p><a href="#toc">Go To Table of Contents</a></p>
-		
-		<hr class="space">
-	</div><!-- end div .container -->
+
+        <div class="padding mb-5" id="testimony">
+            <div class="container">
+                <div class="text-center">
+                    <h2>Client's testimony</h2>
+                    <figure id="fiqure_one">
+                        <p><img src="assets/images/12.png" alt="stars" class="stars"></p>
+                        <span><img src="assets/images/11.png" alt="lines"></span>
+                    </figure>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12 text-center paragragh">
+                        <img src="assets/images/6.png" alt="testimony" class="mb-5">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta ullam facilis fuga laborum
+                            facere voluptatum, culpa fugit nobis, incidunt assumenda veniam provident obcaecati saepe,
+                            est
+                            ad sed maxime corrupti placeat!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum provident fugit maiores.
+                            Assumenda nostrum vitae accusantium obcaecati eveniet. Quas dolor nesciunt totam doloribus
+                            atque
+                            dicta quaerat maiores? Dignissimos, consequuntur consequatur?
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae ipsum unde, libero
+                            maiores
+                            et, adipisci quidem aperiam facilis ducimus inventore accusantium, iusto suscipit temporibus
+                            blanditiis laudantium nemo eveniet optio. Enim.
+                        </p>
+                        <hr>
+                        <p class="name"> -Julian Wan</p>
+                        <p class="status">Department of Global Health - University of Washington</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="padding mt-3 mb-5" id="blog">
+            <div class="container text-center">
+                <div class="text-center">
+                    <h2>Blog Post</h2>
+                    <figure id="fiqure_one">
+                        <p><img src="assets/images/12.png" alt="stars" class="stars"></p>
+                        <span><img src="assets/images/11.png" alt="lines"></span>
+                    </figure>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-2">
+                        <img src="assets/images/7.png" alt="" class="img-thumbnail" height="400px" width="400px">
+                    </div>
+                    <div class="col-md-4 mb-2">
+                        <img src="assets/images/8.png" alt="" class="img-thumbnail" height="400px" width="400px">
+                    </div>
+                    <div class="col-md-4 mb-2">
+                        <img src="assets/images/9.png" alt="" class="img-thumbnail" height="400px" width="400px">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="padding mt-3 mb-5" id="contact_us">
+            <div class="container">
+                <div class="text-center">
+                    <h2>Contact Us</h2>
+                    <figure id="fiqure_one">
+                        <p><img src="assets/images/12.png" alt="stars" class="stars"></p>
+                        <span><img src="assets/images/11.png" alt="lines"></span>
+                    </figure>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic</p>
+                </div>
+                <div class="row">
+
+                    <div class="col-lg-6">
+
+                        <form action="" id="form" class="form-group">
+                            <label for="name">Name</label>
+                            <input type="name" class="form-control" id="name">
+
+                            <label for="phone">Phone</label>
+                            <input type="tel" name="tel" id="phone" class="form-control">
+
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" class="form-control">
+
+                            <label for="Message">Message</label>
+                            <textarea name="message" id="message" cols="30" rows="10" class="form-control"></textarea>
+
+                            <input type="submit" value="Submit" class="btn btn-md btn-success m-3">
+
+                        </form>
+                    </div>
+                    <div class="col-lg-6" style="width:500px;height:500px;">
+                        <div id="gmapdisplay" style="height:100%; width:100%; max-width:100%;">
+                            <iframe style="height:100%; width:100%; border:0;" frameborder="0"
+                                src="https://www.google.com/maps/embed/v1/place?q=Address:+2853+Seville+Cir.+Antioch,+Carlifonia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="news-letter" id="news_letter">
+            <div id="fixed-one" class="mt-5 pt-5 pd-5">
+                <div class="container-fluid">
+                    <div class="text-center news-letter">
+                        <h3 class="head_test">Join Our Newsletter</h3>
+                        <p>
+                            We’ll make sure to send you sweet updates and specials
+                        </p>
+                        <form action="" class="">
+                            <label for="name"></label>
+                            <input type="email" name="" id="name" class="" placeholder="Email">
+                            <input type="submit" value="send" class="btn btn-md btn-success m-3">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-content End->
+
+            <!-footer start->
+                <footer id="footer">
+                    <div id="main_footer">
+
+                        <div class="container text-center" id="footer_text">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <a href="">Townlite</a>
+                                </div>
+                                <div class="col-md-4">
+                                    <h3>Contact us</h3>
+                                    <p>Address: 2853 Seville Cir. Antioch, Carlifonia</p>
+                                    <p>Phone: + 234 (0) 816-610-8330</p>
+                                    <p>Email: info@bakeryshop.com</p>
+                                    <p>www.bakeryshop.com</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <p>The shop is open</p>
+                                    <p>Monday to Friday from</p>
+                                    <p>8am - 7pm</p>
+
+                                    <ul>
+                                        <li><i class="fab fa-instagram-square"></i></li>
+                                        <li><i class="fab fa-facebook-square"></i></li>
+                                        <li><i class="fab fa-twitter-square"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <div id="footer_copyright">
+                        <div class="container" id="copyright">
+                            <p>Copyright ©2020, BAKERY SHOP. All rights reserved</p>
+                        </div>
+                    </div>
+                </footer>
+                <!-footer End->
+    </div>
+
+
+
+
+
+
+    <!-- swiperthe first two jQuery third, then Popper.js, then Bootstrap JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
