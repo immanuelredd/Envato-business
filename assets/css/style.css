@@ -199,7 +199,7 @@ h2 {
 }
 
 .stars {
-    position: relative;
+    position: relative !important;
     top: 40px;
 }
 
@@ -254,6 +254,42 @@ p {
         padding: 2em 2em !important;
     }
 }
+
+#testimony .paragraph p {
+    color: #494949 !important;
+    font-family: Poppins !important;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.name {
+    color: black;
+    font-weight: 600;
+}
+
+.swiper-container {
+    width: 100%;
+}
+
+#fixed-one {
+    background: url('/assets/images/10.png') no-repeat center center;
+    display: table;
+    height: 70%;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.news-letter {
+    position: relative;
+    z-index: 2 !important;
+    color: #ffffff;
+}
+
 
 /*footer*/
 #main_footer {
