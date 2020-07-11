@@ -242,6 +242,19 @@ p {
     padding: 2em 4em !important;
 }
 
+@media(max-width:1100px) {
+    .card-img-overlay {
+        padding: 1em 2em !important;
+    }
+}
+
+
+@media (width: 768px) {
+    .card-img-overlay {
+        padding: 2em 2em !important;
+    }
+}
+
 /*footer*/
 #main_footer {
     background-color: var(--main-color);
