@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!----<link rel="stylesheet" href="assets/css/style.css"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@300&display=swap"
@@ -12,65 +12,70 @@
     <script src="https://kit.fontawesome.com/afad5444a3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/js/custom.js">
     <title>Townlite | Bakery</title>
+
 </head>
 
 <body style="margin: 1em;">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-12">
-                <div id="carousel_one" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-sm-12 col-lg-4">
-                                        <div class="card" style="width: 300px;">
-                                            <img src="assets/images/3.png" alt="" srcset="" class="card-img-top">
-                                            <div class="card-img-overlay">
-                                                <h4 class="card-title">Maple Oat Muffin</h4>
-                                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                                    elit.</p>
-                                                <p class="text-left">$ 10.25</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-sm-12 col-lg-4">
-                                        <div class="card mb-2" style="width: 300px;">
-                                            <img src="assets/images/4.png" alt="" srcset="" class="card-img-top">
-                                            <div class="card-img-overlay">
-                                                <h4 class="card-title">Amaretti Cookie</h4>
-                                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                                    elit.</p>
-                                                <p class="text-left">$ 12.25</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12 col-lg-4">
-                                        <div class="card" style="width: 300px;">
-                                            <img src="assets/images/5.png" alt="" srcset="" class="card-img-top">
-                                            <div class="card-img-overlay">
-                                                <h4 class="card-title">Sourdough</h4>
-                                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                                    elit.</p>
-                                                <p class="text-left">$ 6.25</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+    <div id="Carousel_two" class="carousel slide">
+        <!-- Carousel items -->
+        <div class="carousel-inner">
+            <ol class="carousel-indicators">
+                <li data-target="#Carousel_two" data-slide-to="0" class="active"></li>
+                <li data-target="#Carousel_two" data-slide-to="1"></li>
+                <li data-target="#Carousel_two" data-slide-to="2"></li>
+            </ol>
+            <div class="row text-center">
+                <div class="col-lg-12 paragragh">
+                    <div class="active carousel-item">
+                        <img src="assets/images/6.png" alt="testimony" class="mb-5">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu, nec odio eget varius in mattis
+                            augue ut adipiscing. Sed placerat sed tortor sit et. Morbi quis viverra viverra pulvinar
+                            <br>
+                            pellentesque pulvinar scelerisque auctor. Auctor imperdiet tincidunt magnis eget id amet in
+                            facilisi in. Varius duis volutpat augue risus aliquam integer facilisis vitae. Ornare odio
+                            neque, nam lacus quisque ornare convallis arcu aliquam.
+                            <br>
+                            Mattis cursus erat amet ac eu, a feugiat orci. Cursus nibh morbi hendrerit sit porta
+                            facilisis. Neque cursus aliquam imperdiet nibh phasellus ut.
+                            <br>
+                            <hr>
+                            -Julian Wan
+                            <br>
+                            Department of Global Health - University of Washington
+                        </p>
+                        <br>
                     </div>
-                    <a href="#carousel_one" class="carousel-control-prev" data-slide="prev">
-                        <i class="fas fa-chevron-left"></i>
-                    </a>
-                    <a href="#carousel_one" class="carousel-control-next" data-slide="next">
-                        <i class="fas fa-chevron-right"></i></a>
-                    </a>
+                    <div class="carousel-item">
+                        <img src="assets/images/13.png" alt="testimony" class="mb-5">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu, nec odio eget varius in mattis
+                            augue ut adipiscing. Sed placerat sed tortor sit et. Morbi quis viverra viverra pulvinar
+                            <br>
+                            pellentesque pulvinar scelerisque auctor. Auctor imperdiet tincidunt magnis eget id amet in
+                            facilisi in. Varius duis volutpat augue risus aliquam integer facilisis vitae. Ornare odio
+                            neque, nam lacus quisque ornare convallis arcu aliquam.
+                            <br>
+                            Mattis cursus erat amet ac eu, a feugiat orci. Cursus nibh morbi hendrerit sit porta
+                            facilisis. Neque cursus aliquam imperdiet nibh phasellus ut.
+                            <br>
+                            <hr>
+                            -Jeff Lane
+                            <br>
+                            Department of Global Health - University of Washington
+                        </p>
+                        <br>
+                    </div>
                 </div>
             </div>
         </div>
+        <!-- Carousel nav -->
+        <a class="carousel-control-prev" href="#Carousel_two" data-slide="prev">&lsaquo;</a>
+        <a class="carousel-control-next" href="#Carousel_two" data-slide="next">&rsaquo;</a>
     </div>
+
+
+
     <!--jQuery, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
