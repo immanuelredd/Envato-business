@@ -222,6 +222,8 @@ p {
 
 .card img {
     padding: 2px;
+    height: 100%;
+    width: 100%;
 }
 
 #carousel_one i {
