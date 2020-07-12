@@ -67,7 +67,7 @@ body {
 }
 
 .fa-bars {
-    color: var(--primary-color) !important;
+    color: var(--main-color) !important;
     padding-top: 5px;
 }
 
@@ -166,7 +166,7 @@ body {
 
 
 /*Content*/
-#main {
+#about_us {
     margin-top: 3em;
 }
 
@@ -208,21 +208,42 @@ p {
     font-family: Poppins;
 }
 
-.card-img-overlay h4 {
+.card {
+    margin: auto;
+    border: none !important;
+    width: 300px;
+    height: 73%;
+}
+
+.card:hover {
+    border: 1px solid var(--main-color) !important;
+    padding: 1em;
+}
+
+.card img {
+    padding: 2px;
+}
+
+#carousel_one i {
+    color: var(--main-color) !important;
+    height: 30%;
+}
+
+.carousel-caption h4 {
     font-style: normal;
     font-weight: 600 !important;
     font-size: 24px;
     line-height: 36px;
 }
 
-.card-img-overlay .card-text {
+.carousel-caption .card-text {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 21px;
 }
 
-.card-img-overlay .text-left {
+.carousel-caption .text-left {
     font-weight: 500;
     font-size: 24px;
     line-height: 36px;
@@ -233,13 +254,15 @@ p {
     filter: brightness(90%);
 }
 
-.card-img-overlay {
-    margin-top: 130% !important;
-    text-align: center;
-    background: rgba(2, 180, 76, 0.6);
+.carousel-caption {
+    position: relative !important;
+    top: -200px;
+    left: 3px !important;
     z-index: 1;
     color: var(--primary-color);
-    padding: 2em 4em !important;
+    background-color: rgba(2, 180, 76, 0.6);
+    width: 98%;
+    padding: 1em;
 }
 
 @media(max-width:1100px) {
@@ -264,14 +287,7 @@ p {
     line-height: 28px;
 }
 
-.name {
-    color: black;
-    font-weight: 600;
-}
 
-.swiper-container {
-    width: 100%;
-}
 
 #fixed-one {
     background: url('/assets/images/10.png') no-repeat center center;

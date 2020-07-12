@@ -15,7 +15,9 @@
 </head>
 
 <body>
+    <!--Wrapper-->
     <div id="wrapper">
+
         <!--header start-->
         <header id="header">
             <div class="nav_text">
@@ -56,7 +58,8 @@
         <!--header end-->
 
         <!---Content-->
-        <main id="main" class="container mt-5 mb-5">
+        <!--About-us-->
+        <main id="about_us" class="container mt-5 mb-5">
             <div class="text-center">
                 <h2 class="header_two">About Us</h2>
                 <figure id="fiqure_one">
@@ -102,9 +105,11 @@
                 </div>
             </div>
         </main>
+        <!-- End About-us-->
 
-        <div class=" mt-5 mb-5" id="portfolio">
-            <div class="container">
+        <!--Portfolio-->
+        <div class=" mt-5" id="portfolio">
+            <div class="container-fluid">
                 <div class="text-center">
                     <h2>Portfolio</h2>
                     <figure id="fiqure_one">
@@ -114,60 +119,119 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
 
-                <div class="swiper-container">
-                    <!-- Slider main container -->
+                <div class="portfolio_carousel">
                     <div class="row">
-                        <div class="col-lg-4 col-md-12 mb-2 swiper-wrapper">
-                            <div class="card swiper-slide">
-                                <img src="assets/images/3.png" alt="" srcset="" class="card-img-top d-block w-100">
-                                <div class="card-img-overlay">
-                                    <h4 class="card-title">Maple Oat Muffin</h4>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    <p class="text-left">$ 10.25</p>
+                        <div class="col-sm-12">
+                            <div id="carousel_one" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-sm-12 col-lg-4">
+                                                    <div class="card mb-2" style="width: 300px;">
+                                                        <img src="assets/images/3.png" alt="" srcset=""
+                                                            class="card-img-top">
+                                                        <div class="carousel-caption">
+                                                            <h4 class="card-title">Maple Oat Muffin</h4>
+                                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur
+                                                                adipiscing
+                                                                elit.</p>
+                                                            <p class="text-left">$ 10.25</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-12 col-lg-4">
+                                                    <div class="card mb-2" style="width: 300px;">
+                                                        <img src="assets/images/4.png" alt="" srcset=""
+                                                            class="card-img-top">
+                                                        <div class="carousel-caption">
+                                                            <h4 class="card-title">Amaretti Cookie</h4>
+                                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur
+                                                                adipiscing
+                                                                elit.</p>
+                                                            <p class="text-left">$ 12.25</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 col-lg-4">
+                                                    <div class="card" style="width: 300px;">
+                                                        <img src="assets/images/5.png" alt="" srcset=""
+                                                            class="card-img-top">
+                                                        <div class="carousel-caption">
+                                                            <h4 class="card-title">Sourdough</h4>
+                                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur
+                                                                adipiscing
+                                                                elit.</p>
+                                                            <p class="text-left">$ 6.25</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-sm-12 col-lg-4">
+                                                    <div class="card" style="width: 300px;">
+                                                        <img src="assets/images/3.png" alt="" srcset=""
+                                                            class="card-img-top">
+                                                        <div class="carousel-caption">
+                                                            <h4 class="card-title">Maple Oat Muffin</h4>
+                                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur
+                                                                adipiscing
+                                                                elit.</p>
+                                                            <p class="text-left">$ 10.25</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-12 col-lg-4">
+                                                    <div class="card mb-2" style="width: 300px;">
+                                                        <img src="assets/images/4.png" alt="" srcset=""
+                                                            class="card-img-top">
+                                                        <div class="carousel-caption">
+                                                            <h4 class="card-title">Amaretti Cookie</h4>
+                                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur
+                                                                adipiscing
+                                                                elit.</p>
+                                                            <p class="text-left">$ 12.25</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 col-lg-4">
+                                                    <div class="card" style="width: 300px;">
+                                                        <img src="assets/images/5.png" alt="" srcset=""
+                                                            class="card-img-top">
+                                                        <div class="carousel-caption">
+                                                            <h4 class="card-title">Sourdough</h4>
+                                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur
+                                                                adipiscing
+                                                                elit.</p>
+                                                            <p class="text-left">$ 6.25</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                                <a href="#carousel_one" class="carousel-control-prev" data-slide="prev">
+                                    <i class="fas fa-chevron-left fa-3x"></i>
+                                </a>
+                                <a href="#carousel_one" class="carousel-control-next" data-slide="next">
+                                    <i class="fas fa-chevron-right fa-3x"></i></a>
+                                </a>
                             </div>
-
-                        </div>
-                        <div class="col-lg-4 col-md-12 mb-2 swiper-wrapper">
-                            <div class="card swiper-slide">
-                                <img src="assets/images/4.png" alt="" srcset="" class="card-img-top d-block w-100">
-                                <div class="card-img-overlay">
-                                    <h4 class="card-title">Amaretti Cookie</h4>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    <p class="text-left">$ 12.25</p>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-lg-4 col-md-12  mb-2 swiper-wrapper ">
-
-                            <div class="card swiper-slide">
-                                <img src="assets/images/5.png" alt="" srcset="" class="card-img-top d-block w-100">
-                                <div class="card-img-overlay">
-                                    <h4 class="card-title">Sourdough</h4>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    <p class="text-left">$ 6.25</p>
-                                </div>
-                            </div>
-
                         </div>
                     </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
-
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-
-                    <!-- If we need scrollbar -->
-                    <div class="swiper-scrollbar"></div>
                 </div>
             </div>
-
         </div>
+        <!--End Portfolio-->
 
-
-
+        <!--Testimony-->
         <div class="padding mb-5" id="testimony">
             <div class="container">
                 <div class="text-center">
@@ -182,19 +246,23 @@
                     <div class="col-lg-12 text-center paragragh">
                         <img src="assets/images/6.png" alt="testimony" class="mb-5">
                         <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta ullam facilis fuga laborum
-                            facere voluptatum, culpa fugit nobis, incidunt assumenda veniam provident obcaecati saepe,
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta ullam facilis fuga
+                            laborum
+                            facere voluptatum, culpa fugit nobis, incidunt assumenda veniam provident obcaecati
+                            saepe,
                             est
                             ad sed maxime corrupti placeat!
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum provident fugit maiores.
-                            Assumenda nostrum vitae accusantium obcaecati eveniet. Quas dolor nesciunt totam doloribus
+                            Assumenda nostrum vitae accusantium obcaecati eveniet. Quas dolor nesciunt totam
+                            doloribus
                             atque
                             dicta quaerat maiores? Dignissimos, consequuntur consequatur?
                         </p>
                         <p>
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae ipsum unde, libero
                             maiores
-                            et, adipisci quidem aperiam facilis ducimus inventore accusantium, iusto suscipit temporibus
+                            et, adipisci quidem aperiam facilis ducimus inventore accusantium, iusto suscipit
+                            temporibus
                             blanditiis laudantium nemo eveniet optio. Enim.
                         </p>
                         <hr>
@@ -204,8 +272,9 @@
                 </div>
             </div>
         </div>
+        <!--End Testimony-->
 
-
+        <!--Blog-->
         <div class="padding mt-3 mb-5" id="blog">
             <div class="container text-center">
                 <div class="text-center">
@@ -231,7 +300,9 @@
                 </div>
             </div>
         </div>
+        <!--End Blog-->
 
+        <!--Contact Us-->
         <div class="padding mt-3 mb-5" id="contact_us">
             <div class="container">
                 <div class="text-center">
@@ -272,7 +343,9 @@
                 </div>
             </div>
         </div>
+        <!--End Contact Us-->
 
+        <!--News letter-->
         <div class="news-letter" id="news_letter">
             <div id="fixed-one" class="mt-5 pt-5 pd-5">
                 <div class="container-fluid">
@@ -290,65 +363,67 @@
                 </div>
             </div>
         </div>
-        <!-content End->
+        <!--News letter-->
+        <!----content End--->
 
-            <!-footer start->
-                <footer id="footer">
-                    <div id="main_footer">
+        <!----footer start-->
+        <footer id="footer">
+            <div id="main_footer">
 
-                        <div class="container text-center" id="footer_text">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <a href="">Townlite</a>
-                                </div>
-                                <div class="col-md-4">
-                                    <h3>Contact us</h3>
-                                    <p>Address: 2853 Seville Cir. Antioch, Carlifonia</p>
-                                    <p>Phone: + 234 (0) 816-610-8330</p>
-                                    <p>Email: info@bakeryshop.com</p>
-                                    <p>www.bakeryshop.com</p>
-                                </div>
-                                <div class="col-md-4">
-                                    <p>The shop is open</p>
-                                    <p>Monday to Friday from</p>
-                                    <p>8am - 7pm</p>
-
-                                    <ul>
-                                        <li><i class="fab fa-instagram-square"></i></li>
-                                        <li><i class="fab fa-facebook-square"></i></li>
-                                        <li><i class="fab fa-twitter-square"></i></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-
+                <div class="container text-center" id="footer_text">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="">Townlite</a>
                         </div>
+                        <div class="col-md-4">
+                            <h3>Contact us</h3>
+                            <p>Address: 2853 Seville Cir. Antioch, Carlifonia</p>
+                            <p>Phone: + 234 (0) 816-610-8330</p>
+                            <p>Email: info@bakeryshop.com</p>
+                            <p>www.bakeryshop.com</p>
+                        </div>
+                        <div class="col-md-4">
+                            <p>The shop is open</p>
+                            <p>Monday to Friday from</p>
+                            <p>8am - 7pm</p>
 
-                    </div>
-                    <div id="footer_copyright">
-                        <div class="container" id="copyright">
-                            <p>Copyright ©2020, BAKERY SHOP. All rights reserved</p>
+                            <ul>
+                                <li><i class="fab fa-instagram-square"></i></li>
+                                <li><i class="fab fa-facebook-square"></i></li>
+                                <li><i class="fab fa-twitter-square"></i></li>
+                            </ul>
                         </div>
                     </div>
-                </footer>
-                <!-footer End->
+
+
+                </div>
+
+            </div>
+            <div id="footer_copyright">
+                <div class="container" id="copyright">
+                    <p>Copyright ©2020, BAKERY SHOP. All rights reserved</p>
+                </div>
+            </div>
+        </footer>
+        <!----footer End-->
     </div>
+    <!-- End Wrapper-->
 
 
 
 
 
 
-    <!-- swiperthe first two jQuery third, then Popper.js, then Bootstrap JS -->
+    <!--jQuery, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
