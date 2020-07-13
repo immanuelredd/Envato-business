@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins&display=swap');
+
 /*all elements*/
 * {
     box-sizing: border-box;
@@ -6,16 +8,15 @@
 }
 
 :root {
+    --unique-font: 'Clicker Script',
+        cursive;
+    --general-font: 'Poppins',
+        sans-serif;
     --main-color: #01C880;
     --primary-color: #fff;
 }
 
-body {
-    font-family: 'Clicker Script',
-        cursive;
-    font-family: 'Poppins',
-        sans-serif;
-}
+
 
 /*header*/
 #header {
@@ -48,16 +49,14 @@ body {
 }
 
 #navbar .navbar-brand {
-    font-family: 'Clicker Script',
-        cursive;
+    font-family: var(--unique-font);
     font-size: 96px;
     line-height: 127px;
     font-weight: normal;
 }
 
 .nav-link {
-    font-family: 'Poppins',
-        sans-serif;
+    font-family: var(--general-font);
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -77,8 +76,7 @@ body {
 }
 
 #header_one {
-    font-family: 'Clicker Script',
-        cursive;
+    font-family: var(--unique-font);
     font-size: 134px;
     line-height: 90px;
     color: var(--primary-color);
@@ -126,8 +124,7 @@ body {
     }
 
     #navbar .navbar-brand {
-        font-family: 'Clicker Script',
-            cursive;
+        font-family: var(--unique-font);
         font-size: 48px;
         line-height: 127px;
         font-weight: normal;
@@ -138,8 +135,7 @@ body {
     }
 
     #header_one {
-        font-family: 'Clicker Script',
-            cursive;
+        font-family: var(--unique-font);
         font-size: 67px;
         line-height: 45px;
         color: var(--primary-color);
@@ -166,8 +162,7 @@ body {
     }
 
     #navbar .navbar-brand {
-        font-family: 'Clicker Script',
-            cursive;
+        font-family: var(--unique-font);
         font-size: 48px;
         line-height: 127px;
         font-weight: normal;
@@ -178,8 +173,7 @@ body {
     }
 
     #header_one {
-        font-family: 'Clicker Script',
-            cursive;
+        font-family: var(--unique-font);
         font-size: 67px;
         line-height: 45px;
         color: var(--primary-color);
@@ -194,8 +188,7 @@ body {
 }
 
 h2 {
-    font-family: 'Clicker Script',
-        cursive;
+    font-family: var(--unique-font);
     color: var(--main-color);
     font-weight: normal !important;
     font-size: 60px !important;
@@ -209,7 +202,7 @@ h2 {
 }
 
 .paragraph_two {
-    font-family: Poppins;
+    font-family: var(--general-font);
     font-style: normal;
     font-weight: normal;
     font-size: 18px !important;
@@ -228,7 +221,7 @@ h2 {
 
 #portfolio h4,
 p {
-    font-family: Poppins;
+    font-family: var(--general-font);
 }
 
 #portfolio .card {
@@ -364,7 +357,7 @@ span {
 }
 
 #blog .carousel-caption p {
-    font-family: Poppins;
+    font-family: var(--general-font);
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -373,7 +366,7 @@ span {
 
 #blog .carousel-caption a {
     color: var(--main-color) !important;
-    font-family: Poppins;
+    font-family: var(--general-font);
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -381,7 +374,7 @@ span {
 }
 
 #form {
-    font-family: Poppins;
+    font-family: var(--general-font);
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -423,7 +416,7 @@ span {
 }
 
 .news-letter-text h2 {
-    font-family: Poppins;
+    font-family: var(--general-font);
     font-style: normal;
     font-weight: 500;
     font-size: 36px;
@@ -431,7 +424,7 @@ span {
 }
 
 .news-letter-text p {
-    font-family: Poppins;
+    font-family: var(--general-font);
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -445,7 +438,7 @@ span {
 }
 
 .input_name {
-    font-family: Poppins;
+    font-family: var(--general-font);
     font-style: normal;
     position: relative !important;
     padding-left: 1em;
@@ -479,7 +472,7 @@ span {
 }
 
 #footer h3 {
-    font-family: Poppins;
+    font-family: var(--general-font);
     font-style: normal;
     font-weight: bold;
     font-size: 26px;
@@ -487,8 +480,7 @@ span {
 }
 
 .footer_brand {
-    font-family: 'Clicker Script',
-        cursive;
+    font-family: var(--unique-font);
     font-size: 96px;
     line-height: 127px !important;
     text-decoration: none;
@@ -506,7 +498,7 @@ span {
 }
 
 .footer_address {
-    font-family: Poppins;
+    font-family: var(--general-font);
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -514,7 +506,7 @@ span {
 }
 
 .footer_working_hours {
-    font-family: Poppins;
+    font-family: var(--general-font);
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -527,7 +519,7 @@ span {
     color: white;
     text-align: center;
     padding: 1em;
-    font-family: Poppins;
+    font-family: var(--general-font);
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -536,8 +528,7 @@ span {
 
 @media(max-width: 1000px) {
     .footer_brand {
-        font-family: 'Clicker Script',
-            cursive;
+        font-family: var(--unique-font);
         font-size: 76px;
         line-height: 127px !important;
         text-decoration: none;

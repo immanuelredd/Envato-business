@@ -1,176 +1,535 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<head lang="en">
-	<meta http-equiv="content-type" content="text/html;charset=utf-8">
-	<title>Template Documentation Template</title>
-	<!-- Framework CSS -->
-	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
-	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
-	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
-	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
-	<style type="text/css" media="screen">
-		p, table, hr, .box { margin-bottom:25px; }
-		.box p { margin-bottom:10px; }
-	</style>
+<!DOCTYPE html>
+<!--[if IE 6]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8" />
+
+  <title>Townlite Bakery - Documentation</title>
+
+  <meta name="description" content="" />
+  <meta name="author" content="Team Syntax" />
+  <meta name="copyright" content="Team Syntax" />
+  <meta name="generator" content="Documenter v2.0 http://rxa.li/documenter" />
+  <meta name="date" content="2020-07-04T00:00:00+02:00" />
+
+  <link rel="stylesheet" href="assets/css/documenter_style.css" media="all" />
+  <link rel="stylesheet" href="assets/js/google-code-prettify/prettify.css" media="screen" />
+  <script src="assets/js/google-code-prettify/prettify.js"></script>
+
+  <script src="assets/js/jquery.js"></script>
+
+  <script src="assets/js/jquery.scrollTo.js"></script>
+  <script src="assets/js/jquery.easing.js"></script>
+
+  <script>
+    document.createElement('section')
+    var duration = '500',
+      easing = 'swing'
+  </script>
+  <script src="assets/js/script.js"></script>
+
+  <style>
+    html {
+      background-color: #ffffff;
+      color: #383838;
+    }
+
+    ::-moz-selection {
+      background: #444444;
+      color: #dddddd;
+    }
+
+    ::selection {
+      background: #444444;
+      color: #dddddd;
+    }
+
+    #documenter_sidebar #documenter_logo {
+      background-image: url(assets/images/logo.png);
+    }
+
+    a {
+      color: #0000ff;
+    }
+
+    .btn {
+      border-radius: 3px;
+    }
+
+    .btn-primary {
+      background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
+      background-image: -ms-linear-gradient(top, #0088cc, #0044cc);
+      background-image: -webkit-gradient(linear,
+          0 0,
+          0 0088cc%,
+          from(#dddddd),
+          to(#0044cc));
+      background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
+      background-image: -o-linear-gradient(top, #0088cc, #0044cc);
+      background-image: linear-gradient(top, #0088cc, #0044cc);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0044CC', GradientType=0);
+      border-color: #0044cc #0044cc #bfbfbf;
+      color: #ffffff;
+    }
+
+    .btn-primary:hover,
+    .btn-primary:active,
+    .btn-primary.active,
+    .btn-primary.disabled,
+    .btn-primary[disabled] {
+      border-color: #0088cc #0088cc #bfbfbf;
+      background-color: #0044cc;
+    }
+
+    hr {
+      border-top: 1px solid #ebebeb;
+      border-bottom: 1px solid #ffffff;
+    }
+
+    #documenter_sidebar,
+    #documenter_sidebar ul a {
+      background-color: #dddddd;
+      color: #222222;
+    }
+
+    #documenter_sidebar ul a {
+      -webkit-text-shadow: 1px 1px 0px #eeeeee;
+      -moz-text-shadow: 1px 1px 0px #eeeeee;
+      text-shadow: 1px 1px 0px #eeeeee;
+    }
+
+    #documenter_sidebar ul {
+      border-top: 1px solid #aaaaaa;
+    }
+
+    #documenter_sidebar ul a {
+      border-top: 1px solid #eeeeee;
+      border-bottom: 1px solid #aaaaaa;
+      color: #444444;
+    }
+
+    #documenter_sidebar ul a:hover {
+      background: #444444;
+      color: #dddddd;
+      border-top: 1px solid #444444;
+    }
+
+    #documenter_sidebar ul a.current {
+      background: #444444;
+      color: #dddddd;
+      border-top: 1px solid #444444;
+    }
+
+    #documenter_copyright {
+      display: block !important;
+      visibility: visible !important;
+    }
+  </style>
 </head>
 
+<body class="documenter-project-go">
+  <div id="documenter_sidebar">
+    <a href="#documenter_cover" id="documenter_logo"></a>
+    <ul id="documenter_nav">
+      <li><a class="current" href="#documenter_cover">Start</a></li>
 
-<body>
-	<div class="container">
-	
-		<h3 class="center alt">&ldquo;Townlite Bakery&rdquo; Documentation by &ldquo;Template Author&rdquo; v1.0</h3>
-		
-		<hr>
-		
-		<h1 class="center">&ldquo;Townlite Bakery&rdquo;</h1>
-		
-		<div class="borderTop">
-			<div class="span-6 colborder info prepend-1">
-				<p class="prepend-top">
-					<strong>
-					Created: 10/07/2020<br>
-					By: Okputu Emmanuel Okputu<br>
-					Email: <a href="mailto:youremail@yourdomain.com">imanuelokputu94@gmail.com</a>
-					</strong>
-				</p>
-			</div><!-- end div .span-6 -->		
-	
-			<div class="span-12 last">
-				<p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/USERNAME">here</a>. Thanks so much!</p>
-			</div>
-		</div><!-- end div .borderTop -->
-		
-		<hr>
-		
-		<h2 id="toc" class="alt">Table of Contents</h2>
-		<ol class="alpha">
-			<li><a href="#htmlStructure">HTML Structure</a></li>
-			<li><a href="#cssFiles">CSS Files and Structure</a></li>
-			<li><a href="#javascript">JavaScript</a></li>
-			<li><a href="#psdFiles">PSD Files</a></li>
-			<li><a href="#credits">Sources and Credits</a></li>
-			<li><a href="#">API Usage</a> <em class="quiet small"></em></li>
-			<li><a href="#">Any additional unique features that need an overview</a></li>
-		</ol>
-		
-		<hr>
-		
-		<h3 id="htmlStructure"><strong>A) HTML Structure</strong> - <a href="#toc">top</a></h3>
-		<p>This theme is a fixed layout with two columns. All of the information within the main content area is nested within a div with an id of "primaryContent". The sidebar's (column #2) content is within a div with an id of "secondaryContent". The general template structure is the same throughout the template. Here is the general structure.</p>
-		
-		<img src="assets/images/htmlstructure.png" alt="HTML Structure" />
-		
-		<p>If you would like to edit the color, font, or style of any elements in one of these columns, you would do the following:</p>
+      <li>
+        <a href="#files_structure" title="Files Structure">Files Structure</a>
+      </li>
+      <li>
+        <a href="#html_structure" title="HTML Structure">HTML Structure</a>
+      </li>
+      <li>
+        <a href="#css_structure" title="CSS Structure">CSS Structure</a>
+      </li>
+      <li><a href="#javascript" title="JavaScript">JavaScript</a></li>
+      <li><a href="#fonts" title="Fonts">Fonts</a></li>
+      <li><a href="#icons" title="Icons">Icons</a></li>
+      <li><a href="#logo" title="Logo">Logo</a></li>
+      <li><a href="#sliders" title="Sliders">Sliders</a></li>
+      <li><a href="#google_map" title="Google Map">Google Map</a></li>
+      <li>
+        <a href="#sources_and_credits" title="Sources and Credits">Sources and Credits</a>
+      </li>
+    </ul>
+    <div id="documenter_copyright">
+      Copyright Team Syntax 2020<br />
+      made with the <a href="http://rxa.li/documenter">Documenter v2.0</a>
+    </div>
+  </div>
+  <div id="documenter_content">
+    <section id="documenter_cover">
+      <h1>Townlite Bakery Ltd.</h1>
+      <h2>Responsive HTML5 Template using Bootstrap</h2>
+      <div id="documenter_buttons"></div>
+      <hr />
+      <ul>
+        <li>created: 10/07/2020</li>
+        <li>latest update: 10/07/2020</li>
+        <li>by: Okputu Emmanuel Okputu</li>
 
-<pre>	#primaryContent a {
-		color: #someColor;
-	} 
+        <li>
+          email:
+          <a
+            href="mailto:&#104;&#101;&#108;&#108;&#111;&#64;&#104;&#110;&#103;&#46;&#116;&#101;&#99;&#104;">&#104;&#101;&#108;&#108;&#111;&#64;&#104;&#110;&#103;&#46;&#116;&#101;&#99;&#104;</a>
+        </li>
+      </ul>
+      <p></p>
+    </section>
+
+    <section id="files_structure">
+      <div class="page-header">
+        <h3>Files Structure</h3>
+        <hr class="notop" />
+      </div>
+      <pre class="prettyprint lang-html linenums">
+- assets/css                    (Template CSS)
+- assets/icons                     (All Icons)
+- assets/images                   (All Images)
+- assets/js                      (Template JS)
 </pre>
+      <p>
+        &nbsp;
+      </p>
+    </section>
+    <section id="html_structure">
+      <div class="page-header">
+        <h3>HTML Structure</h3>
+        <hr class="notop" />
+      </div>
+      <div>
+        The template is based on Bootstrap Framework -
+        http://getbootstrap.com/
+      </div>
+      <div>
+        The default Bootstrap grid system utilizes 12 columns, making for a
+        1170px wide depending on your viewport.
+      </div>
+      <div>
+        Below 480px viewports, the columns become fluid and stack vertically.
+      </div>
+      <div>
+        &nbsp;
+      </div>
+      <div>
+        Create a .row and add the appropriate number of .col-* columns.
+      </div>
+      <div>
+        &nbsp;
+      </div>
+      <div>
+        <pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;row&quot;&gt;
+        
+       { Level 1 column }
 
-		<p>If you find that your new style is not overriding, it is most likely because of a specificity problem. Scroll down in your CSS file and make sure that there isn't a similar style that has more weight.</p>
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-6&quot;&gt; { Level 2 } &lt;/div&gt;
+            &lt;div class=&quot;col-6&quot;&gt; { Level 2 } &lt;/div&gt;
+        &lt;/div&gt;
 
-		<p>I.E.</p>
+&lt;/div&gt;</pre>
+      </div>
+      <p>
+        If you need more information, please visit this site:
+        <a href="http://getbootstrap.com/css/#grid" target="_blank">http://getbootstrap.com/css/#grid</a>
+      </p>
+    </section>
+    <section id="css_structure">
+      <div class="page-header">
+        <h3>CSS Structure</h3>
+        <hr class="notop" />
+      </div>
+      <div>
+        The organization of the CSS is one of our priorities.
+      </div>
+      <div>
+        These are the CSS file we&#39;re using in the template:
+      </div>
+      <div>
+        &nbsp;
+      </div>
+      <pre class="prettyprint lang-html linenums">
+- assets/
+  - css/
+    - style.css                - (Main CSS file) 
 
-<pre>	#wrap #primaryContent a {
-		color: #someColor;
-	}
 </pre>
-
-		<p>So, to ensure that your new styles are applied, make sure that they carry enough "weight" and that there isn't a style lower in the CSS file that is being applied after yours.</p> 
-
-		<hr>
-
-		<h3 id="cssFiles"><strong>B) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
-
-		<p>I'm using one CSS file in this theme. The first one is a generic reset file. </p> 
-
-		<!---<p>Many browser interpret the default behavior of html elements differently. By using a general reset CSS file, we can work round this. This file also contains some general styling, such as anchor tag colors, font-sizes, etc. Keep in mind, that these values might be overridden somewhere else in the file.The second file contains all of the specific stylings for the page. The file is separated into sections using:</p>  --->
-
-<pre>	/* === Header Section === */
-
-	some code
-
-	/* === content Section === */
-	
-	some code
-	
-	/* === Footer === */
-	
-	some code
-	
-	etc, etc. 
+    </section>
+    <section id="javascript">
+      <div class="page-header">
+        <h3>JavaScript</h3>
+        <hr class="notop" />
+      </div>
+      <div>
+        jQuery - is a Javascript library that greatly reduces the amount of
+        code that you must write.
+      </div>
+      <div>
+        For more information, please visit
+        <a href="http://www.jquery.com" target="_blank">http://www.jquery.com/</a>
+      </div>
+      <div>
+        &nbsp;
+      </div>
+      <div>
+        All the JavaScript libraries and files are included at the bottom of
+        every HTML page like this:
+      </div>
+      <div>
+        <pre class="prettyprint lang-html linenums">
+&lt;!-- Main Jquery JS --&gt;
+&lt;script src=&quot;./assets/js/jquery/jquery-3.5.1.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;        
+&lt;!-- Popper JS --&gt;
+&lt;script src=&quot;./assets/js/popper/popper.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt; 
+&lt;!-- Bootstrap JS --&gt;
+&lt;script src=&quot;./assets/js/bootstrap/bootstrap.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;       
+&lt;!-- Slick JS --&gt;
+&lt;script src=&quot;./assets/js/slick/slick.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;    
+&lt;!-- Wow JS --&gt;
+&lt;script src=&quot;./assets/js/wow/wow.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;   
+&lt;!-- Custom JS --&gt;
+&lt;script src=&quot;./assets/js/custom.js&quot;&gt;&lt;/script&gt;
 </pre>
-		
-		<p>If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited.</p> 
+      </div>
+      <p>&nbsp;</p>
+    </section>
+    <section id="fonts">
+      <div class="page-header">
+        <h3>Fonts</h3>
+        <hr class="notop" />
+      </div>
+      <div>
+        To change the embedded font, please take a look in the head part of
+        assets/css/style.css:
+      </div>
+      <div>
+        &nbsp;
+      </div>
+      <div>
+        <pre class="prettyprint lang-html linenums">
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins&display=swap');
+            </pre>
+      </div>
+      <p>&nbsp;</p>
+      <div>
+        <div>
+          To change the font, first go to http://www.google.com/webfonts
+          choose a font and add the generated code to the top of style.css.
+        </div>
+        <div>
+          &nbsp;
+        </div>
+        <div>
+          Then edit --header-font or --text-font in
+        </div>
+        <div>
+          &nbsp;
+        </div>
+        <div>
+          <pre class="prettyprint lang-css linenums">
+:root {
+--unique-font: 'Clicker Script',
+cursive;
+--general-font: 'Poppins',
+sans-serif;
+--main-color: #01C880;
+--primary-color: #fff;
+}</pre>
+        </div>
+      </div>
+    </section>
+    <section id="icons">
+      <div class="page-header">
+        <h3>Icons</h3>
+        <hr class="notop" />
+      </div>
+      <div>
+        All font are located in the images directory
+      </div>
+      <div>
+        &nbsp;
+      </div>
 
-		<p>It is worth Knowing that you can reduce the font-sizes, image size or color for almost any element on the page.I some cases you need to just add 'important' like shown below.</p>
-
-<pre>	#primaryContent #blog img {
-		change styles here: somecolor !important;
-	}
+      <div>
+        &nbsp;
+      </div>
+      <div>
+        <p>
+          We are using svg fonts which you can get more and add to
+          assets/images/icons
+        </p>
+      </div>
+    </section>
+    <section id="logo">
+      <div class="page-header">
+        <h3>Logo</h3>
+        <hr class="notop" />
+      </div>
+      <p>
+        Open index.html and find this part of code. Just change path to your
+        image logo
+      </p>
+      <pre class="prettyprint lang-html linenums">
+&lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt; &lt;img src=&quot;./assets/images/...path to your logo<span style="font-family: Arial, Verdana, sans-serif;">... path to your image logo ...</span><span style="font-family: Arial, Verdana, sans-serif;">&quot; alt=&quot;logo&quot; /&gt; &lt;/a&gt;</span>
 </pre>
+    </section>
+    <section id="sliders">
+      <div class="page-header">
+        <h3>Sliders</h3>
+        <hr class="notop" />
+      </div>
+      <div>
+        Slick slider is the slider you will find in the content. It's an essay
+        to use lighweight carousel with some decent features.
+      </div>
+      <div>
+        &nbsp;
+      </div>
+      <div>
+        <div>
+          <div>
+            Estate Section slider has class &#39;sliders&#39; and each slide
+            has &#39;&lt;div class=&quot;slider-item&quot;&gt;&#39; wrapper
+            for easy find where slide html code start. If you wont remove some
+            slide just remove div with all content like this &#39;&lt;div
+            class=&quot;item&quot;&gt;&#39;
+          </div>
+          <div>
+            &nbsp;
+          </div>
+        </div>
+        <pre class="prettyprint lang-html linenums">
+&lt;!-- Sliders --&gt;
+&lt;div id=&quot;carouselId&quot; class=&quot;carousel slide first-slide&quot; data-ride=&quot;carousel&quot;>
+  &lt;ol class=&quot;carousel-indicators position-absolute&quot;>
+    &lt;li data-target=&quot;#carouselId&quot; data-slide-to=&quot;0&quot; class=&quot;active&quot;>&lt;/li>
+    &lt;li data-target=&quot;#carouselId&quot; data-slide-to=&quot;1&quot;>&lt;/li>
+    &lt;li data-target=&quot;#carouselId&quot; data-slide-to=&quot;2&quot;>&lt;/li>
+  &lt;/ol>
+  &lt;div class=&quot;carousel-inner d-flex align-items-center&quot; role=&quot;listbox&quot;>
+    &lt;div class=&quot;carousel-item active&quot;>
+      &lt;p class=&quot;paragraph-text-slide text-white m-auto&quot;>
+        The #1 ranked. Helped over 50,000 couples around the country 
+        and we look forward to supporting you along your wedding 
+        planning journey.
+      &lt;/p>
+    &lt;/div>
+    &lt;div class=&quot;carousel-item&quot;>
+          --- Secound Carousel Content ---
+    &lt;/div>
+    &lt;div class=&quot;carousel-item&quot;>
+      &lt;div>
+          --- Third Carousel Content---
+        &lt;/p>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+  &lt;a class=&quot;carousel-control-prev&quot; href=&quot;#carouselId&quot; role=&quot;button&quot; data-slide=&quot;prev&quot;&gt;
+    &lt;i class=&quot;fa fa-arrow-left&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
+    &lt;span class=&quot;sr-only&quot;&gt;Previous&lt;/span&gt;
+  &lt;/a&gt;
+  &lt;a class=&quot;carousel-control-next&quot; href=&quot;#carouselId&quot; role=&quot;button&quot; data-slide=&quot;next&quot;&gt;
+    &lt;i class=&quot;fa fa-arrow-right&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
+    &lt;span class=&quot;sr-only&quot;&gt;Next&lt;/span&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
 
-		<hr>
-		
-		<h3 id="javascript"><strong>C) JavaScript</strong> - <a href="#toc">top</a></h3>
-		
-		<p>This theme imports three Javascript files.</p>
-		
-		<ol>
-			<li>jQuery</li>
-			<li>My custom scripts</li>
-			<li>Some plugin</li>
-		</ol>
-		  
-		<ol>
-			<li>jQuery is a Javascript library that greatly reduces the amount of code that you must write.</li>
-			<li>Most of the animation in this site is carried out from the customs scripts. There are a few functions worth looking over.
-<pre>	[some Javascript goes here...along with an general explanation]
-	[some Javascript goes here...along with an general explanation]
-	[some Javascript goes here...along with an general explanation]
-</pre>
-			</li>
-			<li>In addition to the custom scripts, I implement a few "tried and true" plugins to create the effects. This plugin is packed, so you won't need to manually edit anything in the file. The only necessary thing to know is how to call the method. For example:
-<pre>	[some Javascript goes here...along with an general explanation]</pre>
-			</li>
-		</ol>
-		
-		<hr>
-		
-		<h3 id="psdFiles"><strong>D) PSD Files</strong> - <a href="#toc">top</a></h3>
-		
-		<p>I've included three psds with this theme:</p>
-		
-			<ol>
-				<li>The main layout</li>
-				<li>The header</li>
-				<li>The buttons</li>
-			</ol>
-		
-		<p>If you'd like to change the main image in the header, open "header.psd", make the necessary adjustments, and then save the file as "headerBG.png". Do the same for the buttons.</p> 
-		
-		<p>Include any more specific information about your psds.</p>
-		
-		<hr>
-		
-		<h3 id="credits"><strong>E) Sources and Credits</strong> - <a href="#toc">top</a></h3>
-		
-		<p>I've used the following images, icons or other files as listed.
-		
-		<ul>
-			<li>File name from file author</li>
-			<li>File name from file author</li>
-			<li>File name from file author</li>
-			<li>File name from file author</li>
-		</ul>
-		
-		<hr>
-		
-		<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
-		
-		<p class="append-bottom alt large"><strong>Okputu Emmanuel Okputu</strong></p>
-		<p><a href="#toc">Go To Table of Contents</a></p>
-		
-		<hr class="space">
-	</div><!-- end div .container -->
+&lt;!-- /.Header Carousel --&gt;</pre>
+        <div>
+          &nbsp;
+        </div>
+        <div>
+          If you want to change option for sliders you can click on the link below.
+        </div>
+        <p>
+          You can find more documentation here&nbsp;<a href="https://getbootstrap.com/docs/4.5/getting-started/introduction/
+            target=" _blank">"https://getbootstrap.com/docs/4.5/getting-started/introduction/"</a>
+        </p>
+    </section>
+    <section id="google_map">
+      <div class="page-header">
+        <h3>Google Map</h3>
+        <hr class="notop" />
+      </div>
+      <div>
+        The map used in the content is a google map embedded
+      </div>
+      <div>
+        <a href="https://www.google.ng/maps">https://www.google.ng/maps</a>
+      </div>
+      <div>
+        &nbsp;
+      </div>
+      <div>
+        &nbsp;
+      </div>
+      <div>
+        change&nbsp;
+      </div>
+      <pre class="prettyprint lang-html linenums">change the src="https://www.google.com/maps/embed?pb=XXXXXXXX" url
+&lt;iframe
+	src=""
+	width="100%"
+	height="450"
+	frameborder="0"
+	style="border: 0;"
+	allowfullscreen=""
+	aria-hidden="false"
+	tabindex="0"
+&gt;&lt;/iframe&gt;
+		</pre>
+
+      <div>
+        to
+      </div>
+      <pre class="prettyprint lang-html linenums">
+          To your preferred Location
+        </pre>
+    </section>
+    <section id="sources_and_credits">
+      <div class="page-header">
+        <h3>Sources and Credits</h3>
+        <hr class="notop" />
+      </div>
+      <div>
+        Fonts:
+      </div>
+      <div>
+        <strong>Google Fonts</strong> -
+        <a href="http://www.google.com/webfonts/">http://www.google.com/webfonts/</a>
+      </div>
+      <div></div>
+      <div>
+        &nbsp;
+      </div>
+      <div>
+        Scripts:
+      </div>
+      <div>
+        <strong>jQuery</strong> -
+        <a href="http://www.jquery.com/">http://www.jquery.com/</a>
+      </div>
+      <div>
+        <strong>Bootstrap Framework</strong> -
+        <a href="http://getbootstrap.com/" target="_blank">http://getbootstrap.com/</a>
+      </div>
+      <div>
+        <strong>Popper Js</strong> -&nbsp;<a href="https://popper.js.org/">https://popper.js.org/</a>
+      </div>
+      <div>
+        <strong>animate.css</strong> -&nbsp;<a href="http://daneden.me/animate">http://daneden.me/animate</a>
+      </div>
+      <div>
+        &nbsp;
+      </div>
+    </section>
+  </div>
 </body>
+
 </html>
