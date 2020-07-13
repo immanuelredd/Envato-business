@@ -11,6 +11,7 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/afad5444a3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/js/custom.js">
+    <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
     <title>Townlite | Bakery</title>
 </head>
 
@@ -36,7 +37,7 @@
                                 <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
                                 <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
                                 <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
-                                <li class="nav-item"><a href="#" class="nav-link" id="btn">Contact Us</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link" id="btn_one">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
@@ -46,7 +47,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <h1 id="header_one">Townlite Bakery</h1>
-                                <a href="#" id="btn">Order now</a>
+                                <a href="#" id="btn_two">Order now</a>
                             </div>
                         </div>
                     </div>
@@ -128,7 +129,7 @@
                                         <div class="container">
                                             <div class="row">
                                                 <div class="col-sm-12 col-lg-4">
-                                                    <div class="card" style="width: 300px; margin: auto;">
+                                                    <div class="card mb-2" style="width: 300px; margin: auto;">
                                                         <img src="assets/images/3.png" alt="" srcset=""
                                                             class="card-img-top">
                                                         <div class="carousel-caption">
@@ -142,7 +143,7 @@
                                                 </div>
 
                                                 <div class="col-sm-12 col-lg-4">
-                                                    <div class="card" style="width: 300px; margin: auto;">
+                                                    <div class="card mb-2" style="width: 300px; margin: auto;">
                                                         <img src="assets/images/4.png" alt="" srcset=""
                                                             class="card-img-top">
                                                         <div class="carousel-caption">
@@ -155,7 +156,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-12 col-lg-4">
-                                                    <div class="card" style="width: 300px; margin: auto;">
+                                                    <div class="card mb-2" style="width: 300px; margin: auto;">
                                                         <img src="assets/images/5.png" alt="" srcset=""
                                                             class="card-img-top">
                                                         <div class="carousel-caption">
@@ -174,7 +175,7 @@
                                         <div class="container">
                                             <div class="row">
                                                 <div class="col-sm-12 col-lg-4">
-                                                    <div class="card" style="width: 300px; margin: auto;">
+                                                    <div class="card mb-2" style="width: 300px; margin: auto;">
                                                         <img src="assets/images/3.png" alt="" srcset=""
                                                             class="card-img-top">
                                                         <div class="carousel-caption">
@@ -188,7 +189,7 @@
                                                 </div>
 
                                                 <div class="col-sm-12 col-lg-4">
-                                                    <div class="card" style="width: 300px; margin: auto;">
+                                                    <div class="card mb-2" style="width: 300px; margin: auto;">
                                                         <img src="assets/images/4.png" alt="" srcset=""
                                                             class="card-img-top">
                                                         <div class="carousel-caption">
@@ -201,7 +202,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-12 col-lg-4">
-                                                    <div class="card" style="width: 300px; margin: auto;">
+                                                    <div class="card mb-2" style="width: 300px; margin: auto;">
                                                         <img src="assets/images/5.png" alt="" srcset=""
                                                             class="card-img-top">
                                                         <div class="carousel-caption">
@@ -424,9 +425,13 @@
                             We’ll make sure to send you sweet updates and specials
                         </p>
                         <form action="" class="">
-                            <label for="name"></label>
-                            <input type="email" name="" id="name" class="" placeholder="Email">
-                            <input type="submit" value="send" class="btn btn-md btn-success m-3">
+                            <div>
+                                <input type="email" name="" id="name" class="input_name" placeholder="Email"
+                                    style="width: 382px; height: 54px;" />
+                                <button type="submit" class="input_send" style="width: 72px;
+                                            height: 54px;"><img src="assets/icons/letter.png" alt=""></button>
+                            </div>
+
                         </form>
                     </div>
                 </div>
@@ -439,27 +444,31 @@
         <footer id="footer">
             <div id="main_footer">
 
-                <div class="container text-center" id="footer_text">
+                <div class="container-fluid text-center text-md-left id=" footer_text">
                     <div class="row">
-                        <div class="col-md-4">
-                            <a href="">Townlite</a>
+                        <div class="col-md-4 mb-md-0">
+                            <a href="" class="footer_brand text-center">Townlite</a>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-5 mt-md-0 mt-3">
                             <h3>Contact us</h3>
-                            <p>Address: 2853 Seville Cir. Antioch, Carlifonia</p>
-                            <p>Phone: + 234 (0) 816-610-8330</p>
-                            <p>Email: info@bakeryshop.com</p>
-                            <p>www.bakeryshop.com</p>
+                            <div class="footer_address">
+                                <p>Address: 2853 Seville Cir. Antioch, Carlifonia</p>
+                                <p>Phone: + 234 (0) 816-610-8330</p>
+                                <p>Email: info@bakeryshop.com</p>
+                                <p>www.bakeryshop.com</p>
+                            </div>
+
                         </div>
-                        <div class="col-md-4">
-                            <p>The shop is open</p>
-                            <p>Monday to Friday from</p>
-                            <p>8am - 7pm</p>
+                        <div class="col-md-3 mb-md-0 mb-3">
+                            <p class="footer_working_hours">The shop is open
+                                <br> <strong>Monday to Friday from</strong>
+                                <br> <strong>8am - 7pm</strong>
+                            </p>
 
                             <ul>
-                                <li><i class="fab fa-instagram-square"></i></li>
-                                <li><i class="fab fa-facebook-square"></i></li>
-                                <li><i class="fab fa-twitter-square"></i></li>
+                                <li><a href=""><img src="assets/icons/Vector.png" alt="" class="mb-3"></a></li>
+                                <li><a href=""><img src="assets/icons/Vector (2).png" alt="" class="mb-3"></a></li>
+                                <li><a href=""><img src="assets/icons/Vector (1).png" alt="" class="mb-3"></a></li>
                             </ul>
                         </div>
                     </div>
