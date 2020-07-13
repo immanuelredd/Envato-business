@@ -336,9 +336,53 @@ span {
     height: 508px !important;
 }
 
+#blog .carousel-inner {
+    height: 100% !important;
+    width: 100%;
+    margin: auto !important;
+}
+
+#blog .card {
+    height: 461px;
+    width: 415px;
+    border: none;
+}
+
+#blog .card-img-top {
+    filter: brightness(80%) !important;
+    height: 461px;
+    width: 100%;
+}
+
+#blog .carousel-caption {
+    position: relative !important;
+    top: -180px;
+    left: 0;
+    background: rgba(60, 60, 60, 0.78);
+    z-index: 1;
+    padding: 1em;
+}
+
+#blog .carousel-caption p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+#blog .carousel-caption a {
+    color: var(--main-color) !important;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+}
 
 
-#fixed-one {
+
+#news-letter {
     background: url('/assets/images/10.png') no-repeat center center;
     display: table;
     height: 488px;
