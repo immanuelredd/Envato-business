@@ -242,6 +242,10 @@ p {
     color: var(--main-color) !important;
 }
 
+#blog #carousel-three i {
+    color: var(--main-color) !important;
+}
+
 #carousel_one .carousel-inner {
     height: 100%;
     width: 100%;
