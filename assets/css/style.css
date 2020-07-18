@@ -518,6 +518,17 @@ span {
     letter-spacing: 1px;
 }
 
+.footer_working_hours a {
+    font-family: var(--general-font);
+    color: #fff;
+
+}
+
+.footer_working_hours a:hover {
+    text-decoration: none !important;
+    color: white;
+}
+
 #footer_copyright {
     background: #00BF7A !important;
     color: white;
